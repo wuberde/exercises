@@ -40,7 +40,7 @@ console.log(++a);
 // 9. 
 console.log(--b);
 
-// 10. 
+// 10. my question: the answer should be 14 but why is the machine calculation result 12?
 let d = b - a;
 console.log(d);
 console.log(d + c);
