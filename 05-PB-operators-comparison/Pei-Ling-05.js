@@ -30,6 +30,8 @@ console.log(z === x === y);
 console.log(x % z === y % z);
 
 //10. Check whether z added to x is greater than y minus z. If it is not, find an operator which will give a result of true.
+let q10 = "10. Check whether z added to x is greater than y minus z. If it is not, find an operator which will give a result of true.";
+console.log(q10);
 console.log(z + x > y - z);
 console.log(z + x === y - z);
 
