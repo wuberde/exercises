@@ -8,5 +8,5 @@ console.log(x === y === z);
 // remainder % modulo 
 
 // Ternary 
-
+// condition ? console.log("hello") : console.log("goodbye");
 //condition ? true : false; 
