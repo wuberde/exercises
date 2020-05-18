@@ -2,16 +2,19 @@
 
 // 1. Declare a variable named isDog. If true, print 'pat, pat' and if not, print 'find me a dog to pat!'
 
-function isDog(thisIsDog) {
-    return thisIsDog ? "pat, pat" : "find me a dog to pat!";
-}
-console.log(isDog(true));
+console.log('Task 1.');
+let isDog = true;
+let answer1 = isDog ? ("pat, pat") : ("find me a dog to pat!");
+console.log(answer1);
 
 // 2. Declare a variable named speedCheck. If speedlimit is 50km/h, and your speed is above that, print 'you're going too fast!'. If speed is lower than 50km/h, print 'You're driving below the speed limit, Oma'.
 
-let speedCheck = 51;
-console.log(speedCheck >= 50 ? "you are going too fast!" : "You are driving below the speed limit, Oma");
 
+console.log('Task 2.');
+let speedLimit = 50;
+let speedCheck = 40;
+let answer2 = speedCheck > speedLimit ? ("you are going too fast!") : ("You are driving below the speed limit, Oma");
+console.log(answer2);
 
 // 3. Declare a variable named age. If age is below 16, print "serve butter beer". Otherwise print "serve beer".
 
