@@ -1,3 +1,5 @@
+"use strict";
+
 //1. Declare a variable with the value of "I can walk in the park all day!". Print the word "park" to the console.
 
 let myString1 = `I can walk in the park all day!`;
@@ -9,7 +11,7 @@ let myString2 = "Hello World";
 myString2 = myString2.toUpperCase();
 console.log(myString2);
 
-// 3. Declare another variable with the value of "Hello Earthling". Convert the value to lower case and print the converted value to the console. 
+// 3. Declare another variable with the value of "Hello Earthling". Convert the value to lower case and print the converted value to the console.
 
 let myString3 = "Hello Earthling";
 myString3 = myString3.toLowerCase();
@@ -39,13 +41,13 @@ console.log(myString7);
 
 // 8. Create a new string from a given string by changing the position of first and last characters. The string length must be greater than or equal to 2, i.e., expected output: BoogieWoogie => eoogieWoogiB
 console.log(myString2.length);
-console.log(`${myString2.substring(1,11)}${myString2[0]}`);
+console.log(`${myString2.substring(1, 11)}${myString2[0]}`);
 
-// 9. Create 3 different variables about yourself, using strings as values, i.e, let firstName = "Maria"; let city = "Berlin", etc. Print a sentence to the console using the variables and string interpolation, i.e., "My name is Maria. I live in Berlin and I am a teacher". 
+// 9. Create 3 different variables about yourself, using strings as values, i.e, let firstName = "Maria"; let city = "Berlin", etc. Print a sentence to the console using the variables and string interpolation, i.e., "My name is Maria. I live in Berlin and I am a teacher".
 let firstName = "Pei-Ling";
 let currentCity = "Berlin";
-let pet = "I have a cat"
-console.log(`My name is ${firstName}. I live in ${currentCity}, and ${pet}.`)
+let pet = "I have a cat";
+console.log(`My name is ${firstName}. I live in ${currentCity}, and ${pet}.`);
 
 // 10. Declare a variable and assign the value "the quick brown fox" (all in lower case). Capitalize the first letter of that string. Print the result to the console.
 
