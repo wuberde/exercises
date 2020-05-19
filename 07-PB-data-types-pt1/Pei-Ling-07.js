@@ -1,6 +1,6 @@
 "use strict";
 
-//1. Declare a variable and assign a string as a value. Make sure the string is at least 6 characters long. Print the variable to the console.
+// 1. Declare a variable and assign a string as a value. Make sure the string is at least 6 characters long. Print the variable to the console.
 let myString1 = "Mild weather.";
 console.log(myString1);
 
@@ -28,7 +28,6 @@ console.log(isMarried);
 
 // 8. Print the following "*name* is married: true/false", using your declared variables.
 console.log(`${name} is married: ${isMarried}`);
-
 
 // 9. Declare a variable called programmingLanguage and assign the string "JavaScript". Declare a variable called isFun and give it a value of true.  Print "JavaScript is fun: true" to the console, using your declared variables.
 let programmingLanguage = "JavaScript";
