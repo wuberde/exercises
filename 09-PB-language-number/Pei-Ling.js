@@ -17,7 +17,7 @@ let myConvertedNumber1 = parseInt(myString2);
 console.log(myConvertedNumber1);
 // * Create a variable with the value of "10.05". Convert it to a number. 
 let myString3 = `10.05`;
-let myConvertedNumber2 = parseInt(myString3);
+let myConvertedNumber2 = parseFloat(myString3);
 console.log(myConvertedNumber2);
 
 // #### 3. Remain There
