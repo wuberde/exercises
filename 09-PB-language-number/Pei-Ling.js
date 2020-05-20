@@ -15,7 +15,7 @@ console.log(myString1 + myDciYear);
 let myString2 = `1005`;
 let myConvertedNumber1 = parseInt(myString2);
 console.log(myConvertedNumber1);
-// * Create a variable with the value of "10.05". Convert it to a number. 
+// * Create a variable with the value of "10.05". 
 let myString3 = `10.05`;
 let myConvertedNumber2 = parseFloat(myString3);
 console.log(myConvertedNumber2);
@@ -31,7 +31,3 @@ let number3 = 40.9 % 2;
 console.log(number1 === 0 ? "Yes, it's an even number." : "No. It's an odd number.");
 console.log(number2 === 0 ? "Yes, it's an even number." : "No. It's an odd number.");
 console.log(number3 === 0 ? "Yes, it's an even number." : "No. It's an odd number.");
-
-
-
-// * Create a variable with the value of "10.05". Convert it to a number. 
