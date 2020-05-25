@@ -1,3 +1,5 @@
+"use strict";
+
 // 0. Declare two variables: "a" with the value of true, and "b" with the value of false.
 let a = true;
 let b = false;
@@ -11,7 +13,7 @@ console.log(`Task 0: a=${a}, b=${b}`);
 */
 console.log("Task 1.a):", a && b);
 console.log("Task 1.b):", a || b);
-console.log("Task 1.c):", !a && b);
+console.log("Task 1.c):", !(a && b));
 
 // 2. Declare three more variables "x", "y", "z". Give these variables number values.
 let x = 10;
@@ -57,7 +59,7 @@ console.log(
 // - e) x is greater than or equal to 10 AND y is less than or equal to 10.
 console.log(
   `Task 3.e): ${
-    x > 10 || (x === 10 && y < 10) || y === 10
+    x >= 10 && y <= 10
       ? "Yes, x is greater than or equal to 10 AND y is less than or equal to 10."
       : "Is 'x is greater than or equal to 10 AND y is less than or equal to 10.' correct? Answer: No."
   }`
