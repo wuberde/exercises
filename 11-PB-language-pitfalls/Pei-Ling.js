@@ -5,6 +5,9 @@
 // #### 1. NaN
 // **Question: Comment your answer in your js file**: What does NaN stand for? 
 
+// Answer: NaN standards for "not a number", however, the data type is a Number
+
+
 // * Check if `"hello"` is NaN. 
 console.log(`Check if "hello" is NaN. Answer: `, isNaN("hello"));
 
