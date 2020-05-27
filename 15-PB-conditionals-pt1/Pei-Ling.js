@@ -11,12 +11,10 @@ if (
     (integer2 >= rangeFrom && integer2 <= rangeTo)
 ) {
     console.log(`1:`, "True");
-}
-
-/* else {
+} else {
     console.log(`1:`, "False. Neither of them is in the range");
 }
- */
+
 /* else {
     console.log(`1:`, " ");
 } */
@@ -28,7 +26,7 @@ if (
     (integer2 >= rangeFrom && integer2 <= rangeTo) ||
     (integer3 >= rangeFrom && integer3 <= rangeTo)
 ) {
-    console.log(`2:`, "True");
+    console.log(`2:`, "true");
 }
 
 // 3. Declare the variables a, b and c, and give them number values. Check which one out of the three variables has the largest value and print it to the console. Then change the values of the variables to see if your conditional still works.
