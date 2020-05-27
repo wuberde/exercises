@@ -28,6 +28,7 @@ console.log(`2: John's BMI = `, bmiJohn = (massJohn / heightJohn ** 2).toFixed(2
 let compareBmi;
 console.log(compareBmi = bmiMark > bmiJohn ? true : false);
 
+let compareBmi = bmiMark > bmiJohn;
 // 4. Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? Why yes, it's [boolean], it is"). 
 console.log(`Is Mark's BMI higher than John's? The answer is ${compareBmi}`);
 
