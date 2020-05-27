@@ -21,8 +21,8 @@ console.log(heightMark, massMark, heightJohn, massJohn);
 // 2. Calculate both their BMIs and store their BMIs in variables. 
 let bmiMark;
 let bmiJohn;
-console.log(`2: Mark's BMI = `, bmiMark = (massMark / (heightMark ** 2)).toFixed(2));
-console.log(`2: John's BMI = `, bmiJohn = (massJohn / (heightJohn ** 2)).toFixed(2));
+console.log(`2: Mark's BMI = `, bmiMark = (massMark / heightMark ** 2).toFixed(2));
+console.log(`2: John's BMI = `, bmiJohn = (massJohn / heightJohn ** 2).toFixed(2));
 
 // 3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
 let compareBmi;
