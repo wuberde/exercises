@@ -87,7 +87,7 @@ if (
 
 // 9. Calculate the sum of the two given integers. If the two values are the same, then print triple their sum.
 if (integer1 === integer2) {
-    console.log(`9:`, 3 * integer2);
+    console.log(`9:`, 3 * (integer1 + integer2));
 } else {
     console.log(
         `9:`,
