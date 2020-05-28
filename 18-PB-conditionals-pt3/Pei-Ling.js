@@ -47,12 +47,8 @@ let teamMaryScoreAvg = (teamMaryScore1 + teamMaryScore2 + teamMaryScore3) / 3;
 console.log(`1d): Mary's team's average score is:  ${teamMaryScoreAvg}.`)
 
 // 1e) 
-let teamMaryDreamAvg = teamLisScoreAvg + 1;
-console.log(teamMaryDreamAvg);
-
-if (teamMaryDreamAvg > teamLisScoreAvg) {
-    winner = `Mary's team wins in their dream with higher average score of`;
-    winnerScoreAvg = teamMaryDreamAvg;
+if (teamMaryScoreAvg > teamLisScoreAvg && teamMaryScoreAvg > teamAleezaScoreAvg) {
+    winner = `Mary's team wins with higher average score of`;
+    winnerScoreAvg = teamMaryScoreAvg;
 }
 console.log(`1e):`, winner, winnerScoreAvg);
-//can't finish
