@@ -50,5 +50,11 @@ console.log(`1d): Mary's team's average score is:  ${teamMaryScoreAvg}.`)
 if (teamMaryScoreAvg > teamLisScoreAvg && teamMaryScoreAvg > teamAleezaScoreAvg) {
     winner = `Mary's team wins with higher average score of`;
     winnerScoreAvg = teamMaryScoreAvg;
+} else if (teamAleezaScoreAvg > teamLisScoreAvg && eamAleezaScoreAvg > teamMaryScoreAvg) {
+    winner = `Aleeza's team wins with higher average score of`;
+    winnerScoreAvg = teamAleezaScoreAvg;
+} else if (teamLisScoreAvg > teamAleezaScoreAvg && eamLisScoreAvg > teamMaryScoreAvg) {
+    winner = `Lis's team wins with higher average score of`;
+    winnerScoreAvg = teamLisScoreAvg;
 }
 console.log(`1e):`, winner, winnerScoreAvg);
