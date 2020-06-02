@@ -58,6 +58,8 @@ switch (myFruit) {
     case `apple`:
         console.log(`Apple are 1.49 €/kg.`);
         break;
+    default:
+        console.log(`There's no banana, orange, strawberry, or apple.`);
 }
 
 // #### 4. Percentage Complete.
@@ -74,8 +76,11 @@ switch (percentageComplete === 50) {
         break;
     case 81 <= percentageComplete <= 99:
         console.log(`This is the last push!`);
+        break;
     case percentageComplete === 100:
         console.log(`You're there. Well done!`);
+    default:
+        console.log(`You haven't done anything....`);
 }
 
 // 5. Differences
