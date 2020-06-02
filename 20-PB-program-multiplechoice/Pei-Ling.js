@@ -18,7 +18,9 @@ switch (myColor) {
         console.log(`It's yellow.`);
         break;
     default:
-        console.log(`It's not red, blue, green, or yellow. It's ${myColor}.`);
+        console.log(
+            `Error! It's not red, blue, green, or yellow. It's ${myColor}.`
+        );
 }
 
 // #### 2. Grading
@@ -40,7 +42,7 @@ switch (yourScore) {
         console.log(`Insufficient.`);
         break;
     default:
-        console.log(`You did not take the exam.`);
+        console.log(`Error`);
 }
 
 // #### 3. Fruits
@@ -59,7 +61,7 @@ switch (myFruit) {
         console.log(`Apple are 1.49 €/kg.`);
         break;
     default:
-        console.log(`There's no banana, orange, strawberry, or apple.`);
+        console.log(`Error`);
 }
 
 // #### 4. Percentage Complete.
@@ -81,7 +83,7 @@ switch (true) {
         console.log(`You're there. Well done!`);
         break;
     default:
-        console.log(`You haven't done anything....`);
+        console.log(`Error`);
 }
 
 // 5. Differences
