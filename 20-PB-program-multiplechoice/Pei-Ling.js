@@ -80,6 +80,4 @@ switch (percentageComplete === 50) {
 
 // 5. Differences
 //    When should you use a switch statement versus an if else statement. Comment your answer in your js file.
-/* Answer: You are comparing multiple possible conditions of an expression and the expression itself is non-trivial.
-You have multiple values that may require the same code.
-You have some values that will require essentially all of another value's execution, plus only a few statements. */
+/* Answer: if-else better for boolean values: If-else conditional branches are great for variable conditions that result into a boolean, whereas switch statements are great for fixed data values. ... Prefer switch if the number of cases are more than 5 otherwise, you may use if-else too.
