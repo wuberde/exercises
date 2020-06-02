@@ -64,7 +64,7 @@ switch (myFruit) {
 
 // #### 4. Percentage Complete.
 let percentageComplete = 50;
-switch (percentageComplete === 50) {
+switch (true) {
     case percentageComplete < 30:
         console.log(`Still a long way to go.`);
         break;
