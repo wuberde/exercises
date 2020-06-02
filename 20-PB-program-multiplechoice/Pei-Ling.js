@@ -79,6 +79,7 @@ switch (percentageComplete === 50) {
         break;
     case percentageComplete === 100:
         console.log(`You're there. Well done!`);
+        break;
     default:
         console.log(`You haven't done anything....`);
 }
