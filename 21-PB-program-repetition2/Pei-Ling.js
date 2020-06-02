@@ -27,8 +27,10 @@ console.log(mySum);
 ## 3. Do this while i...
 Use a `do`, `while` loop to print `The number is [i]` while i is less than 20. 
 */
+let index = 0;
 do {
-    console.log(`The number is`, i);
-    i++;
-} while (i < 20)
-console.log(i);
+    console.log(`The number is ${index}`);
+    index++;
+} while (index < 20)
+console.log(`Done`);
+// I didn't know how to solve Task 3 till seeing Mohamed's presentation.
