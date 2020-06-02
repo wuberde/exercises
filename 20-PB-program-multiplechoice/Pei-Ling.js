@@ -1,3 +1,5 @@
+"use strict";
+
 //# Switch if...
 
 // #### 1. Color Analyzer
