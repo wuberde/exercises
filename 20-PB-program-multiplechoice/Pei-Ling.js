@@ -65,18 +65,18 @@ switch (myFruit) {
 }
 
 // #### 4. Percentage Complete.
-let percentageComplete = 50;
+let percentageComplete = 60;
 switch (true) {
     case percentageComplete < 30:
         console.log(`Still a long way to go.`);
         break;
-    case 30 <= percentageComplete <= 50:
+    case percentageComplete >= 30 && percentageComplete <= 50:
         console.log(`Slowly getting there.`);
         break;
-    case 51 <= percentageComplete <= 80:
+    case percentageComplete >= 51 && percentageComplete <= 80:
         console.log(`You can do it!`);
         break;
-    case 81 <= percentageComplete <= 99:
+    case percentageComplete >= 81 && percentageComplete <= 99:
         console.log(`This is the last push!`);
         break;
     case percentageComplete === 100:
