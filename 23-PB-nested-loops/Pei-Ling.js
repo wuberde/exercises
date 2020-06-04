@@ -13,9 +13,9 @@ for (let i = 10; i >= 1; i--) {
     console.log(space);
 }
 
+console.log();
+
 // RHOMBUS
-let string = `RHOMBUS`;
-console.log(string);
 
 let space2 = "";
 for (let i = 1; i <= 10; i++) {
