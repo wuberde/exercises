@@ -13,4 +13,28 @@ for (let i = 10; i >= 1; i--) {
     console.log(space);
 }
 
-// still using the remaining time to try the bonus task
+// RHOMBUS
+let string = `RHOMBUS`;
+console.log(string);
+
+let space2 = "";
+for (let i = 1; i <= 10; i++) {
+    space2 = "";
+    for (let j = i; j < 10; j++) {
+        space2 += " ";
+    }
+    for (let k = 0; k < i * 2 - 1; k++) {
+        space2 += "*";
+    }
+    console.log(space2);
+}
+for (let i = 10; i >= 1; i--) {
+    space2 = "";
+    for (let j = i; j < 10; j++) {
+        space2 += " ";
+    }
+    for (let k = 0; k < i * 2 - 1; k++) {
+        space2 += "*";
+    }
+    console.log(space2);
+}
