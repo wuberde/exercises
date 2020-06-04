@@ -12,3 +12,5 @@ for (let i = 10; i >= 1; i--) {
     }
     console.log(space);
 }
+
+// still using the remaining time to try the bonus task
