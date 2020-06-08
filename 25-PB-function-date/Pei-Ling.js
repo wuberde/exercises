@@ -7,11 +7,13 @@ const dayFuture = new Date(`2020-06-20`);
 const guestName = `Pei-Ling`;
 // console.log(guestName);
 
-checkBooking=(name, date, bookingDate)=> {
+checkBooking = (name, date, bookingDate) => {
     if (date < bookingDate) {
-        console.log(`${name}, your book to the event for the ${bookingDate} is already guaranteed!`);
+        console.log(
+            `${name}, your book to the event for the ${bookingDate} is already guaranteed!`
+        );
     } else {
         console.log(`${name}, please choose a future date.`);
     }
-}
+};
 checkBooking(guestName, dayNow, dayFuture);
