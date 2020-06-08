@@ -19,7 +19,17 @@ let myMultiply3 = (a, b) => {
 console.log(`Task 3:`, myMultiply3(5, 4));
 
 // #### 4. Declarations
-const myMultiply4 = (a, b) => {
+function myMultiply4(a, b) {
     return a % b;
 }
-console.log(`Task 4:`, myMultiply4(9, 8));
+console.log(`Task 4-1 Normal Function:`, myMultiply4(9, 8));
+
+const myMultiply5 = function (a, b) {
+    return a % b;
+}
+console.log(`Task 4-2 Anonymous Function:`, myMultiply5(9, 8));
+
+const myMultiply6 = (a, b) => {
+    return a % b;
+}
+console.log(`Task 4-3 Arrow Function:`, myMultiply6(9, 8));
