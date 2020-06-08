@@ -8,20 +8,22 @@ console.log(mySum);
 
 // 2. **There are i bottles of beer on the wall.**
 let myBeer = ``;
-if ((i2 = 1)) {
-  myBeer += `There is ` + i2 + ` bottle of beer on the wall. `;
-}
-for (i2 = 2; i2 < 6; i2++) {
+
+for (i2 = 0; i2 < 6; i2++) {
+  if (i2 === 1) {
+    myBeer += `There is ` + i2 + ` bottle of beer on the wall. `;
+  }
   myBeer += `There are ` + i2 + ` bottles of beer on the wall. `;
 }
 console.log(myBeer);
 
 // 3. **The odd/even reporter.**
-let myNum = 0;
-for (myNum; myNum <= 20; myNum++) {
-  if (myNum === 0) {
-    console.log(myNum + ` is even`);
-  } else if (myNum % 2 === 0) {
+let myNum;
+for (myNum = 1; myNum <= 20; myNum++) {
+  // // if (myNum === 0) {
+  // //   console.log(myNum + ` is even`);
+  // // } else
+  if (myNum % 2 === 0) {
     console.log(myNum + ` is even`);
   } else {
     console.log(myNum + ` is odd`);
@@ -31,21 +33,21 @@ console.log(myNum);
 
 // 4. **Multiplication Tables.**
 let myMultiplier = 9;
+let i3 = 0; //updated
 for (let i3 = 0; i3 <= 10; i3++) {
   let result = myMultiplier * i3;
   console.log(i3 + ` * ` + myMultiplier + ` = ` + result);
 }
 
 for (myMultiplier = 0; myMultiplier <= 10; myMultiplier++) {
-  for (i3 = 0; i3 <= 10; i3++) {
+  for (let i3 = 0; i3 <= 10; i3++) {
     result = myMultiplier * i3;
     console.log(myMultiplier + " * " + i3 + " = " + result);
   }
 }
 
 // 5. **Fizz Buzz**
-let i4 = 1;
-for (i4; i4 <= 100; i4++) {
+for (i4 = 1; i4 <= 100; i4++) {
   if (i4 % 3 === 0 && i4 % 5 === 0) {
     console.log(`FizzBuzz`);
   } else if (i4 % 3 === 0) {
