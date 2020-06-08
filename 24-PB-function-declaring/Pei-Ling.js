@@ -7,7 +7,7 @@ function myMultiply1(a, b) {
 console.log(`Task 1: Function "myMultiply1" definition = a * b`);
 
 // #### 2. Multiply - Function Declarations as Values
-function myMultiply2(a = 2, b = 3) {
+const myMultiply2 = function (a, b) {
     console.log(`Task 2:`, a * b);
 }
 myMultiply2(10, 20);
