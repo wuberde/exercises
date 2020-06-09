@@ -5,14 +5,14 @@
 `use strict`;
 
 const today = new Date();
-const toDate= today.getDate();
-console.log(toDate);
+console.log(today);
+let toDate = today.getDate();
 
 const remainingDaysOfMonth = (days) => {
-    days = 30;
-    return days - toDate;
-}
-remainingDaysOfMonth();
+  return days - toDate;
+};
+
+console.log(remainingDaysOfMonth(30, toDate));
 
 /* 
 <script> 
