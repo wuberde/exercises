@@ -15,11 +15,12 @@ exponential1(5, 3);
 // * Create a function named `printFavoriteFruit`. Declare a variable outside of the function and store your favorite fruit as a value. Reassign the variable within the function and print "My favorite fruit is: _x_". 
 
 const myFavoriteFruit = `blue berry`;
-const printFavoriteFruit = (val) => {
-    console.log("My favorite fruit is: ", val);
-    val = myFavoriteFruit;
+const printFavoriteFruit = () => {
+    let myFavoriteFruit = `water melon`;
+    console.log("My favorite fruit is: ", myFavoriteFruit);
 }
-printFavoriteFruit(myFavoriteFruit);
+printFavoriteFruit () ; 
+console.log("My favorite fruit is: ", myFavoriteFruit);
 
 // #### 3. Multiply a Number by Itself
 // * Create a function named `exponent` that takes two numbers as parameters. The second parameter defines how many times the first number should be multiplied by itself. Save the output in a variable named `result`. 
