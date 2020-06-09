@@ -1,3 +1,4 @@
+`use strict`;
 // # Function Scope
 // // #### 1. Print Exponential Values
 // Write a function that accepts two numbers and validate that they are numbers. 
@@ -22,13 +23,13 @@ printFavoriteFruit(myFavoriteFruit);
 // * Create a function named `exponent` that takes two numbers as parameters. The second parameter defines how many times the first number should be multiplied by itself. Save the output in a variable named `result`. 
 // * Then, try to access the variable `result` outside of the `exponent` function. Is this possible? Why/Why not? Comment your answer in the `index.js` file.
 
-let result=``;
+let result = ``;
 const exponent = (x, y) => {
     console.log(x **= y);
     let result = exponent;
     console.log(result);
 }
 exponent(2, 3);
-result=exponent;
+result = exponent;
 console.log(result);
 // Not possible. Only shows the function name.
