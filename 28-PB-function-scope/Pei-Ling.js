@@ -5,8 +5,8 @@
 // After that, the function should print _y_ exponential values starting from _x_.
 
 const exponential1 = (x, y) => {
-    console.log(typeof(x));
-    console.log(typeof(y));
+    console.log(typeof (x));
+    console.log(typeof (y));
     console.log(x **= y);
 }
 exponential1(5, 3);
