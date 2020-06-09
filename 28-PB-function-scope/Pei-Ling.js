@@ -7,7 +7,7 @@
 const exponential1 = (x, y) => {
     console.log(typeof(x));
     console.log(typeof(y));
-    console.log(y **= x);
+    console.log(x **= y);
 }
 exponential1(5, 3);
 
