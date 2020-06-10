@@ -1,4 +1,4 @@
-`use strict`;
+"use strict";
 // # Function Scope
 // // #### 1. Print Exponential Values
 // Write a function that accepts two numbers and validate that they are numbers. 
@@ -19,7 +19,7 @@ const printFavoriteFruit = () => {
     let myFavoriteFruit = `water melon`;
     console.log("My favorite fruit is: ", myFavoriteFruit);
 }
-printFavoriteFruit () ; 
+printFavoriteFruit();
 console.log("My favorite fruit is: ", myFavoriteFruit);
 
 // #### 3. Multiply a Number by Itself
