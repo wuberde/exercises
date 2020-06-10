@@ -64,8 +64,20 @@ console.log(
 );
 
 // **8. A Lifetime Supply...**
+const calcSupply = (ageNow, snacksPerDay) => {
+    let maxAge = 100;
+    return (maxAge - ageNow) * (snacksPerDay * 365);
+}
+console.log(`Task 8, ex. 1: You will need`, calcSupply(25, 2), ` bars of chocolate (2 a day) to last you til the age of 80.`);
+console.log(`Task 8, ex. 2: You will need`, calcSupply(40, 3), `packets of crisps (3 a day) to last you til the age of 80.`);
 
 // **9. Where's Waldo?**
-// const isWaldoHere=()=>
+const isWaldoHere = (a) => a.includes(`Waldo`);
+console.log(`Task 9-1, "Is there wal here?" `, isWaldoHere("is there wal here?"));
+console.log(`Task 9-2, "I found you Waldo!" `, isWaldoHere("I found you Waldo!"));
+console.log(`Task 9-3, "Is wally here?" `, isWaldoHere("Is wally here?"));
+console.log(`Task 9-4, "Waldo is here." `, isWaldoHere("Waldo is here."));
+
+
 
 // **10. Pie.**
