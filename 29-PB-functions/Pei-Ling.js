@@ -42,13 +42,15 @@ console.log(`Task 4, ex. 4:`, lessThanOrEqualToZero(10));
 
 // **5. Count Occurrences.**
 
-const countOccurrences = (longestEnglishWord, x) => {
-    return longestEnglishWord.split(x).length - 1;
+const countOccurrences = (str, letter) => {
+    return str.split(letter).length - 1;
 };
 console.log(
-    `Task 5: How many times does the letter o appear in the longest English word "pneumonoultramicroscopicsilicovolcanoconiosis"?`,
-    countOccurrences("pneumonoultramicroscopicsilicovolcanoconiosis", "o")
+    `Task 5: How many times does the letter i appear in the the string "this is a string"?`,
+    countOccurrences("this is a string", "i")
 );
+
+
 
 /* let longestGermanWord = `Donau­dampf­schiffahrts­elektrizitäten­haupt­betriebs­werk­bau­unter­beamten­gesellschaft`;
 console.log(`How many characters?`, longestGermanWord.length);  */
