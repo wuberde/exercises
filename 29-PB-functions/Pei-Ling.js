@@ -47,26 +47,22 @@ const countOccurrences = (str, letter) => {
 };
 console.log(
     `Task 5: How many times does the letter i appear in the the string "this is a string"?`,
-    countOccurrences("this is a string", "i")
+    countOccurrences("this is a string", "i"),
+    "times."
 );
 
-
-
-/* let longestGermanWord = `Donau­dampf­schiffahrts­elektrizitäten­haupt­betriebs­werk­bau­unter­beamten­gesellschaft`;
-console.log(`How many characters?`, longestGermanWord.length);  */
-
 // **6. X To The Power of X.**
-const calculateBaseToExponent = (base, exponent) => {
-    return (base ** exponent);
-};
-console.log(`Task 6:`, calculateBaseToExponent(2, 3));
+const calculateBaseToExponent = (base, exponent) => base ** exponent;
+console.log(`Task 6, ex. 1:`, calculateBaseToExponent(5, 5));
+console.log(`Task 6, ex. 2:`, calculateBaseToExponent(10, 10));
+console.log(`Task 6, ex. 3:`, calculateBaseToExponent(3, 3));
 
 // **7. Dog Years.**
 const dogAge = (a) => {
     return a * 7;
 };
 console.log(
-    `Task 7: According to Guinness World Records, the dog named Bluey lived 29 years, which converted to the human age of`,
+    `Task 7: According to Guinness World Records, the dog named Bluey lived 29 years, which converted to the human age is`,
     Math.round(dogAge(29.416666667)),
     `years old.`
 );
@@ -76,4 +72,4 @@ console.log(
 // **9. Where's Waldo?**
 // const isWaldoHere=()=>
 
-// **10. Pie.** 
+// **10. Pie.**
