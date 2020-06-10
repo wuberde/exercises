@@ -64,6 +64,8 @@ console.log(`Task 7: According to Guinness World Records, the dog named Bluey li
 
 // Below isn't finished yet
 
+// **8. A Lifetime Supply...**
+
 // **9. Where's Waldo?**
 
 // **10. Pie.** 
