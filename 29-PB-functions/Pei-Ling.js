@@ -58,13 +58,9 @@ console.log(`Task 6, ex. 2:`, calculateBaseToExponent(10, 10));
 console.log(`Task 6, ex. 3:`, calculateBaseToExponent(3, 3));
 
 // **7. Dog Years.**
-const dogAge = (a) => {
-    return a * 7;
-};
+const dogAge = (a) => a * 7;
 console.log(
-    `Task 7: According to Guinness World Records, the dog named Bluey lived 29 years, which converted to the human age is`,
-    Math.round(dogAge(29.416666667)),
-    `years old.`
+    `Task 7: According to Guinness World Records, the dog named Bluey lived 29 years, which converted to the human age is ${Math.round(dogAge(29.416666667))} years old.`
 );
 
 // **8. A Lifetime Supply...**
