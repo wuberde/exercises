@@ -95,8 +95,13 @@ console.log(`Task 9-3, "Is wally here?" `, isWaldoHere("Is wally here?"));
 console.log(`Task 9-4, "Waldo is here." `, isWaldoHere("Waldo is here."));
 
 // **10. Pie.**
+const equalSlices = (a, b, c) => a >= b * c;
+console.log(`Task 10, ex. 1: `, equalSlices(8, 3, 2));
+console.log(`Task 10, ex. 2: `, equalSlices(8, 3, 3));
+console.log(`Task 10, ex. 3: `, equalSlices(24, 12, 2));
 
 // **11. XO**
+// copied the solution from classmate's presentation
 const xo = (myString) => {
   let checkForX = 0; // "x"
   let checkForO = 0; // "o"
@@ -121,6 +126,7 @@ console.log(xo("zpzpzpp")); // ➞ true (returns true if no x and o)
 console.log(xo("zzoo")); // ➞ false
 
 // **12. isPrime?**
+// copied the solution from classmate's presentation
 const isPrime = (number) => {
   for (let i = 2; i < number; i++) {
     if (number % i === 0) {
@@ -135,4 +141,15 @@ console.log(isPrime(9));
 console.log(isPrime(10));
 
 // **13. Validate Email.**
-// I can't solve this 
+// I can't solve this
+
+/* 
+const checkEmail = (string) => {
+  if (string.includes(`@` && `.`)) {
+    return true;
+  } else {
+    return false;
+  }
+;
+console.log(checkEmail("john@example.com"));
+ */
