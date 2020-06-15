@@ -45,4 +45,4 @@ function retireSaving() {
 }
 retireSaving();
 let result3 = retireSaving;
-console.log(`This person returns at the age of 75 will have saved `, result3);
+result3;
