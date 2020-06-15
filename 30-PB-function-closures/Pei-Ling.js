@@ -2,47 +2,35 @@
 
 //1.
 
-function add() {
-    let firstNum = 3;
+function add(firstNum) {
 
-    function addNum() {
-        let secondNum = 4;
-        console.log(firstNum + secondNum);
+    return function add2(secondNum) {
+        return firstNum + secondNum;
     }
-    addNum();
 }
-add();
-let result1 = add;
-result1;
+let result1 = add(3)(4);
+console.log(`Task 1: `, result1);
 
 // 2.
-let firstNum = 3;
-
-function multiplier() {
-    let secondNum = 5;
-
-    function multiplierThem() {
-        console.log(firstNum * secondNum);
+let multiplier = function (firstNum) {
+    return function multiplier2(secondNum) {
+        return firstNum * secondNum;
     }
-    multiplierThem();
 }
-multiplier();
-let result2 = multiplier;
-result2;
+console.log(`Task 2: `, multiplier(3)(5));
 
 // 3. 
 let currentAge = 40;
 let retireAge = 75;
 let monthlyWage = 2000;
 
-function retireSaving() {
-    let monthlySave = 0.1;
+let monthlySave = 0.1;
 
+function pension() {
     function sumOfSaving() {
         console.log((retireAge - currentAge) * 12 * (monthlySave * monthlyWage));
     }
     sumOfSaving();
 }
-retireSaving();
-let result3 = retireSaving;
-result3;
+console.log(`Task 3: Pension total= `)
+pension();
