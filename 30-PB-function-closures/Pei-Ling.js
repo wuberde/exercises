@@ -39,7 +39,7 @@ function retireSaving() {
     let monthlySave = 0.1;
 
     function sumOfSaving() {
-        console.log((retireAge - currentAge) * (monthlySave * monthlyWage));
+        console.log((retireAge - currentAge) * 12 * (monthlySave * monthlyWage));
     }
     sumOfSaving();
 }
