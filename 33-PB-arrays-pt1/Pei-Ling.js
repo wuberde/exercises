@@ -45,3 +45,12 @@ console.log(`Task 10: `, worldCitiesRev);
 // 11.
 worldCities[2] = `Toronto`;
 console.log(`Task 11: `, worldCities);
+
+// 12.
+worldCities.splice(1,0, `Washington`);
+console.log(`Task 12: `, worldCities);
+/* 
+worldCities = worldCities.insert(2, "Washington")
+console.log(`Task 12: `, worldCities); */
+
+// 13.
