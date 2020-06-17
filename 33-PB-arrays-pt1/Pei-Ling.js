@@ -34,13 +34,13 @@ let asianCities1 = asianCities.slice(1, 4);
 console.log(`Task 8: `, asianCities1);
 
 // 9.
-let worldCities = [`${euroCities}, ${asianCities}`];
+let worldCities = euroCities.concat(asianCities);
 console.log(`Task 9: `, worldCities);
 // console.log(typeof(worldCities));
 
 // 10.
 let worldCitiesRev = worldCities.reverse();
-console.log(`Task 10: reverse doesn't work...`, worldCitiesRev);
+console.log(`Task 10: `, worldCitiesRev);
 
 // 11.
 worldCities[2] = `Toronto`;
