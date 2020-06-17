@@ -19,18 +19,13 @@ let multiplier = function (firstNum) {
 }
 console.log(`Task 2: `, multiplier(3)(5));
 
-// 3. 
-let currentAge = 40;
-let retireAge = 75;
-let monthlyWage = 2000;
-
-let monthlySave = 0.1;
-
-function pension() {
-    function sumOfSaving() {
-        console.log((retireAge - currentAge) * 12 * (monthlySave * monthlyWage));
+function pension(currentAge, retireAge, monthlyWage, monthlySave) {
+    const isRetired = false;
+    if (isRetired) {
+        return `You're already retired!`;
+    } else {
+        return ((retireAge - currentAge) * (12 * (monthlySave * monthlyWage / 100)));
     }
-    sumOfSaving();
 }
-console.log(`Task 3: Pension total= `)
 pension();
+console.log(`Task 3: `, pension(40, 75, 2000, 10));
