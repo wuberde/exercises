@@ -6,5 +6,4 @@ console.log(`Task 1: `, myArray);
 let thirdElement = myArray[2];
 console.log(`Task 2: The third element is `, thirdElement);
 
-myArray[3] = `fourth element`;
-console.log(`Task 3: `, myArray[3]);
+console.log(`Task 3: `, myArray[3] = `fourth element`);
