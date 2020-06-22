@@ -22,16 +22,15 @@ console.log(monthName(3));
 console.log(monthName(12));
 console.log(monthName(6));
 
-// 4. 
-var unique = function (nums) {
-    for (var i = 0; i < nums.length; i++) {
-        if (i === 0) {
-            nums[0] = 0 ^ nums[0];
-        } else {
-            nums[0] ^= nums[i];
+// 4. (solution from Martina)
+function unique(array) {
+    let number = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i - 1] !== array[i]) {
+            number = array[i - 1];
         }
     }
-    return nums[0];
+    return parseFloat(number);
 };
 console.log(unique([3, 3, 3, 7, 3, 3]));
 console.log(unique([0, 0, 0.77, 0, 0]));
