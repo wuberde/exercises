@@ -21,7 +21,7 @@ const person = {
     job: "engineer",
     country: `France`,
     method: function () {
-        return `${this.firstName} ${this.lastName} is a ${this.age} ${this.job} living in ${this.country}. `;
+        return `${this.firstName} ${this.lastName} is a ${this.age} ${this.job} living in ${this.country}.`;
     }
 }
 console.log(person.method());
