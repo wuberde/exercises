@@ -28,6 +28,16 @@ console.log(person.method());
 
 /*
 ## Bonus
-
 3. Write a method to get the length of the person object.
 */
+const person2 = {
+    firstName: "John",
+    lastName: "Smith",
+    age: 41,
+    job: "engineer",
+    country: `France`,
+    method: function () {
+        return person2.length;
+    }
+}
+console.log(Object.keys(person2).length);
