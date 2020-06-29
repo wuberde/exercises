@@ -4,7 +4,9 @@
 let fruit, vegetable, food;
 [fruit, vegetable] = ["banana", "cucumber"];
 [fruit, vegetable, ...food] = ["banana", "cucumber", "bread", "cakes", "pizza"];
-console.log(food);
+console.log(`fruit: `, fruit);
+console.log(`vegetable: `, vegetable);
+console.log(`food: `, food);
 
 // 2. 
 let halloweenCostume = {
