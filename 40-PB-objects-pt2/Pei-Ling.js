@@ -61,14 +61,14 @@ Examples:
 - {} ➞ true
 - {a: 1} ➞ false */
 
-const isEmpty = (obj) => {
-    if (Object.keys(obj).length === 0 && obj.constructor === Object) {
+const isEmpty = obj => {
+    if (Object.keys(obj).length === 0) {
         return true;
     } else {
         return false;
-    };
-}
-console.log(`\nTask 2`);
+    }
+}; //if(Object.keys(obj).length){return false;}else{return true;}
+console.log(`Task 3:`);
 console.log(isEmpty({}));
 console.log(isEmpty({
     a: 1
