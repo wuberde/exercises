@@ -20,14 +20,17 @@ console.log(cloneEuroCountries);
 // 3. Find the Largest
 // Create a function to find the largest number in an array.
 const arr = [1, 2, 3];
-const arrMax = arr.reduce(function (a, b) {
-    return Math.max(a, b);
-});
-console.log(arrMax);
+const findLargest =(array)=> {
+    return (Math.max(...array));
+};
+console.log(findLargest(arr));
 
 // 4. Find the Smallest
 // Create a function to find the smallest number in an array.
-console.log(Math.min(...arr));
+const findSmallest =(array)=> {
+    return (Math.min(...array));
+};
+console.log(findSmallest(arr));
 
 // 5. Clone and Merge
 // Given two objects:
@@ -48,7 +51,7 @@ console.log(clonePerson);
 
 // 5.2 Merge these two objects into one object: "employee". Use the spread operator to do so.
 let employee = {
-    ...clonePerson,
+    ...person,
     ...job
 };
 console.log(employee);
@@ -56,4 +59,4 @@ console.log(employee);
 // 5.3 Then change the values of the properties in the employee object.
 employee.name = `Jane`;
 employee.role = `Designer`;
-console.log(employee); 
+console.log(employee);
