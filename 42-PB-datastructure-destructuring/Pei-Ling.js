@@ -8,11 +8,11 @@ console.log(`fruit: `, fruit);
 console.log(`vegetable: `, vegetable);
 console.log(`food: `, food);
 
-// 2. 
+// 2.
 let halloweenCostume = {
     fran: "witch",
     peter: "vampire",
-    bob: "frankenstein"
+    bob: "frankenstein",
 };
 // console.log(halloweenCostume);
 let fran, peter, bob;
@@ -25,9 +25,26 @@ console.log(fran);
 console.log(peter);
 console.log(bob);
 
-// 3.  Parameters: Object Destructuring 
-/* Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc.
+/*
+3. Parameters: Object Destructuring
+Create an object with band/musician details e.g. name of the band/musician, greatest hit, nationality, genre etc.
 Then, create a function to display all of the band/musician's data.
-Example
-`Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and their greatest hit is "Us"`. */
-// let obj={band: `AAA`, musician: `Adam`, hit: `Heaven`, 
+Example: `Regina Spektor is a American-Russian singer/songwriter and pianist. The musician sings indie-pop and their greatest hit is "Us"`. 
+*/
+
+const musicBand = {
+    bandName: `Queen`,
+    nationality: `England`,
+    genre: `rock`,
+    greatestHit: `Bohemian Rhapsody`,
+};
+
+function printBand({
+    bandName,
+    nationality,
+    genre,
+    greatestHit
+}) {
+    return `${bandName} are a ${genre} band from ${nationality}, and their greatest hit is ${greatestHit}.`;
+}
+console.log(printBand(musicBand));
