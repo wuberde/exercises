@@ -47,4 +47,13 @@ let clonePerson = {
 console.log(clonePerson);
 
 // 5.2 Merge these two objects into one object: "employee". Use the spread operator to do so.
+let employee = {
+    ...clonePerson,
+    ...job
+};
+console.log(employee);
+
 // 5.3 Then change the values of the properties in the employee object.
+employee.name = `Jane`;
+employee.role = `Designer`;
+console.log(employee); 
