@@ -45,6 +45,6 @@ function printBand({
     genre,
     greatestHit
 }) {
-    return `${bandName} are a ${genre} band from ${nationality}, and their greatest hit is ${greatestHit}.`;
+    return `${bandName} was a ${genre} band from ${nationality}, and their greatest hit is ${greatestHit}.`;
 }
 console.log(printBand(musicBand));
