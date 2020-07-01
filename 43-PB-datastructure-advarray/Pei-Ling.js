@@ -32,9 +32,9 @@ console.log(newArray);
 // 3. Filter Evens
 // Create a function called filterEvens that filters an array and only return even numbers. The function should take an array of numbers as an argument, and should not use a loop.
 
-const filterEvens = (numbers) => {
-    return numbers.filter((numbers) => numbers % 2 === 0);
-}
+const filterEvens = array => 
+    array.filter(numbers => numbers % 2 === 0);
+
 console.log(filterEvens([1, 2, 3, 11, 12, 13])); //returns [2,12]
 console.log(filterEvens([22, 2, 31, 110, 6, 13])); //returns [22,2,110,6]
 
@@ -43,7 +43,7 @@ console.log(filterEvens([22, 2, 31, 110, 6, 13])); //returns [22,2,110,6]
 
 const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
 const filterItems = (friends, query) => {
-    return friends.filter((friends) => friends.toLowerCase().includes(query));
+    return friends.filter((friends) => friends.includes(query));
 }
 console.log(filterItems(friends, 'ka')); // ["Rika"];
 console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
