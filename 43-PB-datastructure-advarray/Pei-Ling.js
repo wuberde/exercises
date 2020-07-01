@@ -48,6 +48,9 @@ const filterItems = (friends, query) => {
 console.log(filterItems(friends, 'ka')); // ["Rika"];
 console.log(filterItems(friends, 'e')); // ["Jenna", "Bleda", "Oliver"];
 
+
+
+
 // 5. (Lena solution)
 const sum = arr => arr.reduce((previous, current) => previous + current);
 console.log(sum([1, 2, 3, 4, 5])); // 15
