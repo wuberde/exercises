@@ -19,8 +19,6 @@ console.log(newPerson);
 person = new Person(`John`, 19);
 console.log(person.describe());
 
-
-
 /* 
 2. Volume
 Write a JavaScript program to get the volume of a cylinder with four decimal places using a class. 
