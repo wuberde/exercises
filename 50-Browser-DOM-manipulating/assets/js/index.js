@@ -1,4 +1,4 @@
-const books = [
+/* const books = [
   {
     title: "The Design of EveryDay Things",
     author: "Don Norman",
@@ -27,3 +27,59 @@ const books = [
     img: "https://eloquentjavascript.net/img/cover.jpg"
   }
 ];
+ */
+
+/* elemetName.addEventListener("name of event", event Handler) */
+//event handler is the function which will execute when event accurs.
+/* let handler= ()=>{
+    alert("loaded")
+}
+
+window.addEventListener("resize",handler) */
+
+
+let h1 = document.querySelector("h1")
+//click event attached to h1
+/* h1.addEventListener("click",(e)=>{
+    h1.style.backgroundColor="yellow"
+}) */
+
+
+//mouse events will not work on mobiles
+h1.addEventListener("mouseenter", () => {
+
+  h1.style.backgroundColor = "yellow"
+})
+h1.addEventListener("mouseleave", () => {
+  h1.style.backgroundColor = "red"
+})
+
+
+let select = document.querySelector("select")
+//change Event
+select.addEventListener("change", (e) => {
+  console.log(e.target.value)
+})
+
+
+let inp = document.querySelector("input")
+//keydown event
+//keydown and keyup
+/* inp.addEventListener("keydown",(e)=>{
+    console.log(e.target.value)
+}) */
+
+let ball = document.querySelector(".ball")
+let position = {
+  x: 0,
+  y: 0
+}
+document.addEventListener("keydown", (e) => {
+
+  if (e.keyCode === 38) {
+    ball.style.transform = `translate(${position.x}px, ${--position.y}px)`
+  }
+  if (e.keyCode === 40) {
+    ball.style.transform = `translate(${position.x}px, ${++position.y}px)`
+  }
+})
