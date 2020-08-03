@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="carousel-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1/6</div>
+            <img src="./images/image1.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/6</div>
+            <img src="./images/image2.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/6</div>
+            <img src="./images/image3.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 3</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/6</div>
+            <img src="./images/image4.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 4</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5/6</div>
+            <img src="./images/image5.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 5</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6/6</div>
+            <img src="./images/image6.jpg" alt="landscape" style="width:100%">
+            <div class="text">Caption 6</div>
+        </div>
+
+        <a href="" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a href="" class="next" onclick="plusSlides(11)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="CurrentSlide(1)"></span>
+        <span class="dot" onclick="CurrentSlide(2)"></span>
+        <span class="dot" onclick="CurrentSlide(3)"></span>
+        <span class="dot" onclick="CurrentSlide(4)"></span>
+        <span class="dot" onclick="CurrentSlide(5)"></span>
+        <span class="dot" onclick="CurrentSlide(6)"></span>
+    </div>
+
+    <script src=index.js>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active"), "";
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->

@@ -1,4 +1,4 @@
-function hoverHeader () {
+export default function hoverHeader () {
     const header = document.querySelector(".header");
     const modal = document.getElementById("myModal");
     header.addEventListener("mouseover", e => {
